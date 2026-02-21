@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* PAGE */
+body {
+  background: #17181a;
+  display: flex;
+  justify-content:space-evenly;
+  padding: 40px;
+}
+
+/* MAIN CONTENT AREA */
+.parent {
+  display: flex;
+justify-content: ;
+  grid-template-columns: repeat(3, 320px);  
+  gap: 30px;                             
+}
+
+/* CARD */
+.card {
+  width: 320px;
+  background: aliceblue;
+  border-radius: 10px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+  
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.status {
+  background: #3ecf8e;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.rate {
+  font-size: 14px;
+  font-weight: 700;
+  color: #444;
+}
+
+/* AVATAR */
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.avatar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* TEXT */
+.name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+/* COMPANY */
+.company {
+  display: inline-block;
+  background: #e8f1ff;
+  color: #2979ff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  margin-bottom: 14px;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.tag {
+  padding: 5px 11px;
+  border-radius: 18px;
+  border: 1px solid #e5e5e5;
+  font-size: 11px;
+  color: #666;
+  background: white;
+}
+
+.tag.highlight {
+  background: #4da3ff;
+  color: white;
+  border: none;
+}
+
+/* DESCRIPTION */
+.desc {
+  font-size: 12px;
+  color: gray;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* DIVIDER */
+.divider {
+  height: 1px;
+  background: #eeeeee;
+  margin: 14px 0;
+}
+
+/* BUTTON */
+.profile-btn {
+  font-size: 11px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+}
